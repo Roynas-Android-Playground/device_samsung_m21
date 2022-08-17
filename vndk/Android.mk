@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2023 The LineageOS Project
+# Copyright (C) 2022 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,21 +14,15 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/samsung/a51
+LOCAL_PATH := prebuilts/vndk/v32/arm64/arch-arm64-armv8-a/shared/vndk-sp
 
-# Inherit common device configuration
-$(call inherit-product, device/samsung/universal9611-common/common.mk)
-# Inherit A51 blobs
-$(call inherit-product, vendor/samsung/m21/m21-vendor.mk)
-
-DEVICE_PACKAGE_OVERLAYS += $(DEVICE_PATH)/overlay
-
-# Screen H/W
-TARGET_SCREEN_HEIGHT := 2400
-TARGET_SCREEN_WIDTH := 1080
-
-# V32
-PRODUCT_PACKAGES += libutils-v32
-
-# Dynamic Partitions
-PRODUCT_USE_DYNAMIC_PARTITIONS := true
+include $(CLEAR_VARS)
+LOCAL_MODULE := libutils-v32
+LOCAL_SRC_FILES := libutils.so
+LOCAL_MODULE_SUFFIX := .so
+LOCAL_MODULE_CLASS := SHARED_LIBRARIES
+LOCAL_MODULE_TARGET_ARCH := arm64
+LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR_SHARED_LIBRARIES)
+LOCAL_MODULE_TAGS := optional
+LOCAL_CHECK_ELF_FILES := false
+include $(BUILD_PREBUILT)

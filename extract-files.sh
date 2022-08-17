@@ -8,12 +8,8 @@
 
 function blob_fixup() {
     case "${1}" in
-        vendor/lib/libsample1.so)
-            sed -i 's|/data/misc/sample1|/data/misc/sample2|g' "${2}"
-            ;;
-        vendor/lib64/libsample2.so)
-            "${PATCHELF}" --remove-needed "libsample3.so" "${2}"
-            "${PATCHELF}" --add-needed "libsample4.so" "${2}"
+	vendor/lib*/libexynosdisplay.so vendor/lib*/sensors.*.so)
+            "${PATCHELF}" --replace-needed libutils.so libutils-v32.so "${2}"
             ;;
     esac
 }
