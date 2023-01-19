@@ -14,10 +14,14 @@
 # limitations under the License.
 #
 
+DEVICE_PATH := device/samsung/a51
+
 # Inherit common device configuration
 $(call inherit-product, device/samsung/universal9611-common/common.mk)
 # Inherit A51 blobs
 $(call inherit-product, vendor/samsung/m21/m21-vendor.mk)
+
+DEVICE_PACKAGE_OVERLAYS += $(DEVICE_PATH)/overlay
 
 # Screen H/W
 TARGET_SCREEN_HEIGHT := 2400
