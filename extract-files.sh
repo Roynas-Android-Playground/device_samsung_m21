@@ -8,7 +8,7 @@
 
 function blob_fixup() {
     case "${1}" in
-	vendor/lib*/libexynosdisplay.so vendor/lib*/sensors.*.so)
+	vendor/lib*/libexynosdisplay.so vendor/lib*/sensors.sensorhub.so vendor/lib*/hw/hwcomposer.exynos9611.so)
             "${PATCHELF}" --replace-needed libutils.so libutils-v32.so "${2}"
             ;;
     esac
