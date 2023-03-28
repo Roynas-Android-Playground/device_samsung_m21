@@ -80,6 +80,7 @@ vendor/lib/libhwjpeg.so
 vendor/lib/libsecnativefeature.so
 vendor/lib/libSEF.quram.so
 vendor/lib/libsensorlistener.so
+vendor/lib/libremosaic_daemon.so
 vendor/lib/libuniapi.so
 vendor/lib/libuniplugin.so
 vendor/lib64/hw/camera.exynos9611.so
@@ -93,6 +94,8 @@ vendor/lib64/libhwjpeg.so
 vendor/lib64/libsecnativefeature.so
 vendor/lib64/libSEF.quram.so
 vendor/lib64/libsensorlistener.so
+vendor/lib64/libremosaic_daemon.so
+vendor/lib64/libremosaiclib_s5kgm2.so
 vendor/lib64/libuniapi.so
 vendor/lib64/libuniplugin.so
 
