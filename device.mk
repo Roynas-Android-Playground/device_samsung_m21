@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/samsung/a51
+DEVICE_PATH := device/samsung/m21
 
 # Inherit common device configuration
 $(call inherit-product, device/samsung/universal9611-common/common.mk)
