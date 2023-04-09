@@ -33,17 +33,6 @@ vendor/tee/driver/00000000-0000-0000-0000-4d53546d7374
 vendor/tee/driver/00000000-0000-0000-0000-564c544b4456
 vendor/tee/tui/resolution_common/ID00000100
 
-
-## GPS
-vendor/bin/hw/gpsd
-vendor/bin/hw/vendor.samsung.hardware.gnss@2.0-service
-# vendor/etc/init/init.gps.rc
-vendor/etc/init/vendor.samsung.hardware.gnss@2.0-service.rc
-vendor/lib64/hw/android.hardware.gnss@2.1-impl.so
-vendor/lib64/hw/vendor.samsung.hardware.gnss@2.0-impl.so
-vendor/lib64/libwrappergps.so
-vendor/lib64/vendor.samsung.hardware.gnss@2.0.so
-
 ## Fingerprint
 vendor/etc/init/fingerprint_common.rc
 vendor/lib/libbauthserver.so
@@ -69,6 +58,17 @@ vendor/firmware/setfile_4ha.bin
 vendor/firmware/setfile_gc5035.bin
 vendor/firmware/setfile_gm2.bin
 vendor/firmware/setfile_hi2021q.bin
+
+## Audio Firmware
+vendor/firmware/APBargeIn_AUDIO_SLSI.bin
+vendor/firmware/APBiBF_AUDIO_SLSI.bin
+vendor/firmware/AP_AUDIO_SLSI.bin
+vendor/firmware/calliope_dram.bin
+vendor/firmware/calliope_sram.bin
+vendor/firmware/rtdsp_param.bin
+
+## DAP
+vendor/lib/soundfx/libswdap.so
 
 ## Camera
 vendor/lib/hw/camera.exynos9611.so
@@ -98,25 +98,3 @@ vendor/lib64/libremosaic_daemon.so
 vendor/lib64/libremosaiclib_s5kgm2.so
 vendor/lib64/libuniapi.so
 vendor/lib64/libuniplugin.so
-
-## EGL
-vendor/lib/egl/libGLES_mali.so
-vendor/lib/hw/gralloc.exynos9611.so
-vendor/lib/hw/hwcomposer.exynos9611.so
-vendor/lib/libacryl.so
-vendor/lib/libacryl_plugin_slsi_hdr10.so
-vendor/lib/libdrmresource.so
-vendor/lib/libexynosdisplay.so
-vendor/lib/libexynosgraphicbuffer.so
-vendor/lib/libExynosHWCService.so
-vendor/lib/libion_exynos.so
-vendor/lib64/egl/libGLES_mali.so
-vendor/lib64/hw/gralloc.exynos9611.so
-vendor/lib64/hw/hwcomposer.exynos9611.so
-vendor/lib64/libacryl.so
-vendor/lib64/libacryl_plugin_slsi_hdr10.so
-vendor/lib64/libdrmresource.so
-vendor/lib64/libexynosdisplay.so
-vendor/lib64/libexynosgraphicbuffer.so
-vendor/lib64/libExynosHWCService.so
-vendor/lib64/libion_exynos.so
