@@ -16,6 +16,7 @@
 
 DEVICE_PATH := device/samsung/m21
 
+TARGET_USES_SLSI_NFC := true
 # Inherit common device configuration
 $(call inherit-product, device/samsung/universal9611-common/common.mk)
 # Inherit A51 blobs
