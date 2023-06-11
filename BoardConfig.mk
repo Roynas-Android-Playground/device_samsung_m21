@@ -24,8 +24,6 @@ include device/samsung/universal9611-common/BoardConfigCommon.mk
 # OTA Asserts
 TARGET_OTA_ASSERT_DEVICE := m21,m21dd,m21nsxx
 
-# Kernel config
-TARGET_KERNEL_CONFIG := vendor/m21-aosp_defconfig
 
 ## Partitions Sizes
 BOARD_BOOTIMAGE_PARTITION_SIZE := 61865984
